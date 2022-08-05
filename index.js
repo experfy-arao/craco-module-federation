@@ -24,9 +24,9 @@ module.exports = {
     if (moduleFederationConfigPath) {
       webpackConfig.output.publicPath = "auto";
 
-      if (pluginOptions?.useNamedChunkIds) {
-        webpackConfig.optimization.chunkIds = "named";
-      }
+//       if (pluginOptions?.useNamedChunkIds) {
+//         webpackConfig.optimization.chunkIds = "named";
+//       }
 
       const htmlWebpackPlugin = webpackConfig.plugins.find(
         (plugin) => plugin.constructor.name === "HtmlWebpackPlugin"
